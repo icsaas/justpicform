@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/mvc
+         http://www.springframework.org/schema/mvc/spring-mvc.xsd
+	     http://www.springframework.org/schema/tx
+	    http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <description>公共配置</description>
+    <context:component-scan base-package="com.gitee.sunchenbin.mybatis.actable.manager.*"/>
+ <context:annotation-config></context:annotation-config>
+    <!-- 默认的注解映射的支持 -->
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                <property name="objectMapper">
+                    <bean class="com.fasterxml.jackson.databind.ObjectMapper">
+                        <property name="dateFormat">
+                            <bean class="java.text.SimpleDateFormat">
+                                <constructor-arg type="java.lang.String" value="yyyy-MM-dd HH:mm:ss"></constructor-arg>
+                            </bean>
+                        </property>
+                    </bean>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+    <!-- 针对freemarker的视图配置 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+        <property name="prefix" value="/views/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10240000"/>
+        <property name="maxInMemorySize" value="10240"/>
+    </bean>
+
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="true">
+        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE"/>
+        <property name="ignoreResourceNotFound" value="true"/>
+        <property name="locations">
+            <list>
+                <value>classpath:/jdbc.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath*:jdbc.properties</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
+        <property name="properties" ref="configProperties"></property>
+    </bean>
+
+    <!-- 数据源配置 -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="initialSize" value="5"/>
+        <property name="maxActive" value="100"/>
+        <!--<property name="minIdle" value="20"/>-->
+        <!--<property name="validationQuery" value="SELECT 1;"/>-->
+        <!--<property name="testOnBorrow" value="true"/>-->
+        <!--<property name="testOnReturn" value="true"/>-->
+        <!--<property name="testWhileIdle" value="true"/>-->
+        <!--<property name="timeBetweenEvictionRunsMillis" value="1800000"/>-->
+        <!--<property name="numTestsPerEvictionRun" value="3"/>-->
+        <!--<property name="minEvictableIdleTimeMillis" value="1800000"/>-->
+    </bean>
+
+
+    <!--transactionManager-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+
+    <import resource="classpath*:spring/spring-mybatis.xml"></import>
+
+
+</beans>

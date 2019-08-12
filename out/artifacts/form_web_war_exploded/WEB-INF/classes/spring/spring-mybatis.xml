@@ -17,7 +17,7 @@
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.gitee.sunchenbin.mybatis.actable.dao.*;com.numerx.formweb.mapper"/>
+        <property name="basePackage" value="com.numerx.formweb.mapper.*;com.gitee.sunchenbin.mybatis.actable.dao.*"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 </beans>

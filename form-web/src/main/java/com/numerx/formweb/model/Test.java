@@ -18,10 +18,10 @@ import java.util.Date;
  * @author matrixorz
  * @data 2019-08-12 01:20
  */
-//@Data
+@Data
 //@NoArgsConstructor
 //@AllArgsConstructor
-//@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode(callSuper = false)
 @Table(name="test")
 //@Log4j
 public class Test extends BaseModel {

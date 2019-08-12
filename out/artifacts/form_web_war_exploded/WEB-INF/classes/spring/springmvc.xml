@@ -13,7 +13,7 @@
          http://www.springframework.org/schema/mvc/spring-mvc.xsd
 	     http://www.springframework.org/schema/tx
 	    http://www.springframework.org/schema/tx/spring-tx.xsd">
-    <context:component-scan base-package="com.numerx.formweb"/>
+    <context:component-scan base-package="com.numerx.formweb.*"/>
     <!-- 默认的注解映射的支持 -->
     <mvc:annotation-driven>
         <mvc:message-converters>

@@ -26,10 +26,10 @@ public class TestController {
 
        Test test = new Test();
        test.setName("sss333");
-//       test.setNumber(9L);
-//       test.setDescription("adfsdfe");
-//
-//       baseMysqlCRUDManager.delete(test);
+       test.setNumber(9L);
+       test.setDescription("adfsdfe");
+
+       baseMysqlCRUDManager.delete(test);
        baseMysqlCRUDManager.save(test);
        int count = testManager.findTestCount();
        return "index";

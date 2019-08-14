@@ -86,6 +86,7 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.7.4" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.4" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.9" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:2.0.0" />
         </element>
       </element>
       <element id="dir-copy" path="$PROJECT_DIR$/form-web/web" />

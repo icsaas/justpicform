@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 /**
  * @author matrixorz
@@ -53,12 +52,12 @@ public class MybatisTableConfig {
         return dataSource;
     }
 
-    @Bean
-    public DataSourceTransactionManager dataSourceTransactionManager() {
-        DataSourceTransactionManager dataSourceTransactionManager = new DataSourceTransactionManager();
-        dataSourceTransactionManager.setDataSource(dataSource());
-        return dataSourceTransactionManager;
-    }
+//    @Bean
+//    public DataSourceTransactionManager dataSourceTransactionManager() {
+//        DataSourceTransactionManager dataSourceTransactionManager = new DataSourceTransactionManager();
+//        dataSourceTransactionManager.setDataSource(dataSource());
+//        return dataSourceTransactionManager;
+//    }
 
     @Bean
     public SqlSessionFactoryBean sqlSessionFactory() throws Exception{

@@ -10,14 +10,27 @@
         <property name="mapperLocations" >
             <array>
                 <value>classpath*:com/gitee/sunchenbin/mybatis/actable/mapping/*/*.xml</value>
-                <value>classpath:/mapper/*Mapper.xml </value>
+                <value>classpath:/mapper/**/*Mapper.xml </value>
             </array>
         </property>
-        <property name="typeAliasesPackage" value="com.numerx.formweb.model"></property>
+        <property name="typeAliasesPackage" value="com.numerx.formweb.trial.model"></property>
+
+
+        <property name="plugins">
+            <array>
+                <!-- 分页插件配置 -->
+                <bean id="paginationInterceptor"
+                      class="com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor">
+                    <property name="dialectType" value="mysql" />
+                </bean>
+            </array>
+        </property>
+
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.numerx.formweb.mapper.*;com.gitee.sunchenbin.mybatis.actable.dao.*"/>
+        <property name="basePackage" value="com.numerx.formweb.heroform.mapper;com.numerx.formweb.trial.mapper;com.gitee.sunchenbin.mybatis.actable.dao.*"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
+
 </beans>

@@ -4,6 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="
        http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
@@ -12,10 +13,17 @@
           http://www.springframework.org/schema/mvc
          http://www.springframework.org/schema/mvc/spring-mvc.xsd
 	     http://www.springframework.org/schema/tx
-	    http://www.springframework.org/schema/tx/spring-tx.xsd">
+	    http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
     <description>公共配置</description>
     <context:component-scan base-package="com.gitee.sunchenbin.mybatis.actable.manager.*"/>
- <context:annotation-config></context:annotation-config>
+    <context:component-scan base-package="com.numerx.formweb.trial.manager.impl"/>
+    <!-- 扫描包加载Service实现类 -->
+    <context:component-scan base-package="com.numerx.formweb.heroform.service"></context:component-scan>
+    <context:component-scan base-package="com.numerx.formweb"/>
+
+    <context:annotation-config></context:annotation-config>
     <!-- 默认的注解映射的支持 -->
     <mvc:annotation-driven>
         <mvc:message-converters>
@@ -66,32 +74,109 @@
     </bean>
 
     <!-- 数据源配置 -->
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-        <property name="driverClassName" value="${jdbc.driver}"/>
-        <property name="url" value="${jdbc.url}"/>
-        <property name="username" value="${jdbc.username}"/>
-        <property name="password" value="${jdbc.password}"/>
-        <property name="initialSize" value="5"/>
-        <property name="maxActive" value="100"/>
-        <!--<property name="minIdle" value="20"/>-->
-        <!--<property name="validationQuery" value="SELECT 1;"/>-->
-        <!--<property name="testOnBorrow" value="true"/>-->
-        <!--<property name="testOnReturn" value="true"/>-->
-        <!--<property name="testWhileIdle" value="true"/>-->
-        <!--<property name="timeBetweenEvictionRunsMillis" value="1800000"/>-->
-        <!--<property name="numTestsPerEvictionRun" value="3"/>-->
-        <!--<property name="minEvictableIdleTimeMillis" value="1800000"/>-->
+    <!-- 数据库连接池 -->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          destroy-method="close">
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="driverClassName" value="${jdbc.driver}" />
+
+        <!-- 初始化连接大小 -->
+        <property name="initialSize" value="0"/>
+        <!-- 连接池最大使用连接数量 -->
+        <property name="maxActive" value="20"/>
+        <!-- 连接池最大空闲 -->
+        <!--  <property name="maxIdle" value="20"/> -->
+        <!-- 连接池最小空闲 -->
+        <property name="minIdle" value="0"/>
+        <!-- 获取连接最大等待时间 -->
+        <property name="maxWait" value="60000"/>
+
+        <property name="validationQuery" value="${validationQuery}"/>
+        <property name="testOnBorrow" value="false"/>
+        <property name="testOnReturn" value="false"/>
+        <property name="testWhileIdle" value="true"/>
+
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="25200000"/>
+
+        <!-- 打开removeAbandoned功能 -->
+        <property name="removeAbandoned" value="true"/>
+        <!-- 1800秒，也就是30分钟 -->
+        <property name="removeAbandonedTimeout" value="1800"/>
+        <!-- 关闭abanded连接时输出错误日志 -->
+        <property name="logAbandoned" value="true"/>
+
+        <!-- 监控数据库 -->
+        <property name="filters" value="mergeStat"/>
+
     </bean>
 
-
-    <!--transactionManager-->
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"/>
+    <!-- 事务管理器 -->
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!-- 数据源 -->
+        <property name="dataSource" ref="dataSource" />
     </bean>
+
     <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!-- 通知 -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!-- 传播行为 -->
+            <tx:method name="save*" propagation="REQUIRED" />
+            <tx:method name="insert*" propagation="REQUIRED" />
+            <tx:method name="add*" propagation="REQUIRED" />
+            <tx:method name="create*" propagation="REQUIRED" />
+            <tx:method name="delete*" propagation="REQUIRED" />
+            <tx:method name="update*" propagation="REQUIRED" />
+            <tx:method name="find*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="select*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="get*" propagation="SUPPORTS" read-only="true" />
+        </tx:attributes>
+    </tx:advice>
+    <!-- 切面 -->
+    <aop:config>
+        <aop:advisor advice-ref="txAdvice"
+                     pointcut="execution(* com.numerx.formweb.*.service.impl.*.*(..))" />
+    </aop:config>
+
 
 
     <import resource="classpath*:spring/spring-mybatis.xml"></import>
 
+    <aop:config proxy-target-class="true"/>
+    <aop:aspectj-autoproxy proxy-target-class="true" />
+
+    <bean id="objectMapper" class="com.numerx.formapi.core.jackson.CustomObjectMapper" init-method="init">
+        <!-- 驼峰转为下划线 -->
+        <property name="camelCaseToLowerCaseWithUnderscores" value="false"/>
+        <property name="dateFormatPattern" value="yyyy-MM-dd HH:mm:ss"/>
+    </bean>
+
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" >
+                <property name="objectMapper" ref="objectMapper"/>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <!-- 扫描插件,redis,cache,jsonp,aop token -->
+    <context:component-scan base-package="com.numerx.formapi.core"></context:component-scan>
+
+    <!-- 扫描控制器 -->
+    <context:component-scan base-package="com.numerx.formweb.*.controller"></context:component-scan>
+
+    <!-- 扫描组件 -->
+    <context:component-scan base-package="com.numerx.formweb.component"></context:component-scan>
+
+    <mvc:resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/"/>
+    <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>
+    <bean class="org.springframework.validation.beanvalidation.MethodValidationPostProcessor"/>
 
 </beans>

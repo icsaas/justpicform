@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.numerx.formweb.heroform.mapper.HeroMapper">
+
+    <resultMap id="BaseResultMap" type="com.numerx.formweb.heroform.entity.Hero">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="hp" property="hp" />
+        <result column="damage" property="damage" />
+    </resultMap>
+
+    <select id="selectMap" resultType="java.util.Map">
+
+		SELECT  *  from  hero
+
+	</select>
+</mapper>

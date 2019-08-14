@@ -1,15 +1,12 @@
 package com.numerx.formboot;
 
-import com.numerx.formboot.mapper.TestMapper;
-import org.junit.Test;
+import com.numerx.formboot.testform.mapper.TestMapper;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -28,7 +25,7 @@ public class FormBootApplicationTest {
 //		if(row2 == 1){
 //			log.info("[添加第二个结果] - [{}]","成功");
 //		}
-//		final com.numerx.formboot.entity.Test Test = testMapper.returnById(2);
+//		final Test Test = testMapper.returnById(2);
 //		log.info("根据用户id查询 - [{}]",Test);
 //
 //		final int row3 = testMapper.update("狄仁杰",1);
@@ -41,7 +38,7 @@ public class FormBootApplicationTest {
 //			log.info("[删除英雄] - [{}]","成功");
 //		}
 //
-//		final List<com.numerx.formboot.entity.Test> Tests = testMapper.returnResult();
+//		final List<Test> Tests = testMapper.returnResult();
 //		log.info("查询hero表的所有数据 - [{}]",Tests);
 //	}
 

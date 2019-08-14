@@ -145,10 +145,7 @@
                      pointcut="execution(* com.numerx.formweb.*.service.impl.*.*(..))" />
     </aop:config>
 
-
-
     <import resource="classpath*:spring/spring-mybatis.xml"></import>
-
     <aop:config proxy-target-class="true"/>
     <aop:aspectj-autoproxy proxy-target-class="true" />
 

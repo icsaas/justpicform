@@ -17,5 +17,5 @@ import java.util.Map;
  */
 public interface ITestService extends IService<Test> {
 
-    Page<Map<Object, Object>> selectBlogPage(Page<Map<Object, Object>> mapPage);
+    Page<Map<Object, Object>> selectTestPage(Page<Map<Object, Object>> mapPage);
 }

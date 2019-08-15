@@ -36,7 +36,7 @@ public class TestController extends AppController<Test, ITestService> {
     @GetMapping("/findJoinPage")
     public Rest findJoinPage(@RequestParam(required = true,defaultValue="1")
                                       Integer page, @RequestParam (defaultValue="10")Integer size){
-        Page<Map<Object, Object>> pageData = getS().selectBlogPage(new Page<Map<Object,Object>>(page,size));
+        Page<Map<Object, Object>> pageData = getS().selectTestPage(new Page<Map<Object,Object>>(page,size));
         return Rest.okData(pageData);
 
     }

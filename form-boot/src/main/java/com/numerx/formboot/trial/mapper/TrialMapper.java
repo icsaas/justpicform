@@ -16,14 +16,14 @@ public interface TrialMapper {
      * @param 传入的id
      * @return 查询的结果集
      */
-    @Select("select * from test where id = #{id}")
+    @Select("select * from trial where id = #{id}")
     Trial returnById(@Param("id") int id);
 
     /**
-     * 返回test表中的所有数据
+     * 返回trial表中的所有数据
      * @return 所有结果集
      */
-    @Select("select * from test")
+    @Select("select * from trial")
     List<Trial> returnResult();
     /**
      * 实现数据插入功能
@@ -32,7 +32,7 @@ public interface TrialMapper {
      * @param damage 英雄伤害值
      * @return 插入是否成功
      */
-    @Insert("insert into test(name, hp, damage) VALUES(#{name}, #{hp}, #{damage})")
+    @Insert("insert into trial(name, hp, damage) VALUES(#{name}, #{hp}, #{damage})")
     int insert(@Param("name") String name,@Param("hp") double hp,@Param("damage") double damage);
 
     /**
@@ -43,7 +43,7 @@ public interface TrialMapper {
      * @param id 英雄id
      * @return 更新是否成功
      */
-    @Update("update test set name = #{name},hp = #{hp},damage = #{damage} where id = #{id}")
+    @Update("update trial set name = #{name},hp = #{hp},damage = #{damage} where id = #{id}")
     int update(@Param("name") String name,@Param("hp") double hp,@Param("damage") double damage,@Param("id") int id);
 
     /**
@@ -51,6 +51,6 @@ public interface TrialMapper {
      * @param id 英雄id
      * @return 删除是否成功
      */
-    @Delete("delete from test where id = #{id}")
+    @Delete("delete from trial where id = #{id}")
     int delete(@Param("id") int id);
 }

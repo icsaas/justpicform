@@ -18,10 +18,10 @@
         http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
     <description>公共配置</description>
     <context:component-scan base-package="com.gitee.sunchenbin.mybatis.actable.manager.*"/>
-    <context:component-scan base-package="com.numerx.formweb.trial.manager.impl"/>
-    <!-- 扫描包加载Service实现类 -->
-    <context:component-scan base-package="com.numerx.formweb.heroform.service"></context:component-scan>
-    <context:component-scan base-package="com.numerx.formweb"/>
+    <!--<context:component-scan base-package="com.numerx.formweb.trial.manager.impl"/>-->
+    <!--&lt;!&ndash; 扫描包加载Service实现类 &ndash;&gt;-->
+    <!--<context:component-scan base-package="com.numerx.formweb.heroform.service"></context:component-scan>-->
+    <context:component-scan base-package="com.numerx.formweb.*"/>
 
     <context:annotation-config></context:annotation-config>
     <!-- 默认的注解映射的支持 -->
@@ -52,24 +52,28 @@
     </bean>
 
 
-    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="true">
-        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE"/>
-        <property name="ignoreResourceNotFound" value="true"/>
-        <property name="locations">
-            <list>
-                <value>classpath:/jdbc.properties</value>
-            </list>
-        </property>
-    </bean>
+    <!--<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="true">-->
+        <!--<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE"/>-->
+        <!--<property name="ignoreResourceNotFound" value="true"/>-->
+        <!--<property name="locations">-->
+            <!--<list>-->
+                <!--<value>classpath:/jdbc.properties</value>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
 
     <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+
         <property name="locations">
             <list>
                 <value>classpath*:jdbc.properties</value>
             </list>
         </property>
     </bean>
-    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer"  lazy-init="true">
+        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE"/>
+        <property name="ignoreResourceNotFound" value="true"/>
         <property name="properties" ref="configProperties"></property>
     </bean>
 
@@ -139,19 +143,20 @@
             <tx:method name="get*" propagation="SUPPORTS" read-only="true" />
         </tx:attributes>
     </tx:advice>
+
     <!-- 切面 -->
-    <aop:config>
-        <aop:advisor advice-ref="txAdvice"
-                     pointcut="execution(* com.numerx.formweb.heroform.service.impl.*.*(..))" />
-    </aop:config>
+    <!--<aop:config>-->
+        <!--<aop:advisor advice-ref="txAdvice"-->
+                     <!--pointcut="execution(* com.numerx.formweb.heroform.service.impl.*.*(..))" />-->
+    <!--</aop:config>-->
 
 
     <!-- MyBatis SqlSessionFactoryBean 配置 -->
     <bean id="sqlSessionFactory"
           class="com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
-        <property name="configLocation" value="classpath:mybatis-config.xml"/>
-        <property name="typeAliasesPackage" value="com.restful.api.web.entity" />
+        <!--<property name="configLocation" value="classpath:mybatis-config.xml"/>-->
+        <property name="typeAliasesPackage" value="com.numerx.formweb.heroform.entity" />
         <property name="mapperLocations" >
             <array>
                 <value>classpath*:com/gitee/sunchenbin/mybatis/actable/mapping/*/*.xml</value>
@@ -171,7 +176,7 @@
 
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.numerx.formweb.heroform.mapper;com.numerx.formweb.trial.mapper;com.gitee.sunchenbin.mybatis.actable.dao.*"/>
+        <property name="basePackage" value="com.numerx.formweb.**.mapper;com.gitee.sunchenbin.mybatis.actable.dao.*"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 

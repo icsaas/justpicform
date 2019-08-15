@@ -22,12 +22,14 @@ import java.util.Map;
  */
 @Service
 public class TestServiceImpl extends ServiceImpl<TestMapper, Test> implements ITestService {
+
     @Autowired
     private TestMapper testMapper;
 
     @Override
-    public Page<Map<Object, Object>> selectBlogPage(Page<Map<Object, Object>> mapPage){
-        List<Map<Object, Object>> list = (List<Map<Object, Object>>) testMapper.selectMap(mapPage);
+    public Page<Map<Object, Object>> selectTestPage(Page<Map<Object, Object>> mapPage){
+
+        List<Map<Object, Object>> list = testMapper.selectMap(mapPage);
         mapPage.setRecords(list);
         return mapPage;
     }

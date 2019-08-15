@@ -3,24 +3,22 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
-       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="
        http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
          http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context.xsd
           http://www.springframework.org/schema/mvc
-         http://www.springframework.org/schema/mvc/spring-mvc.xsd
-         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd ">
+         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
     <context:component-scan base-package="com.numerx.formweb.*"/>
     <!-- 扫描插件,redis,cache,jsonp,aop token -->
-    <context:component-scan base-package="com.numerx.formapi.core"></context:component-scan>
+    <!--<context:component-scan base-package="com.numerx.formapi.core"></context:component-scan>-->
 
-    <!-- 扫描控制器 -->
-    <context:component-scan base-package="com.numerx.formweb.*.controller"></context:component-scan>
+    <!--&lt;!&ndash; 扫描控制器 &ndash;&gt;-->
+    <!--<context:component-scan base-package="com.numerx.formweb.*.controller"></context:component-scan>-->
 
     <!-- 扫描组件 -->
-    <context:component-scan base-package="com.numerx.formweb.component"></context:component-scan>
+    <!--<context:component-scan base-package="com.numerx.formweb.**"></context:component-scan>-->
 
 
     <!-- 默认的注解映射的支持 -->
@@ -75,8 +73,8 @@
 
 
     <import resource="classpath*:spring/spring-mybatis.xml"></import>
-    <aop:config proxy-target-class="true"/>
-    <aop:aspectj-autoproxy proxy-target-class="true" />
+    <!--<aop:config proxy-target-class="true"/>-->
+    <!--<aop:aspectj-autoproxy proxy-target-class="true" />-->
 
     <bean class="org.springframework.validation.beanvalidation.MethodValidationPostProcessor"/>
 

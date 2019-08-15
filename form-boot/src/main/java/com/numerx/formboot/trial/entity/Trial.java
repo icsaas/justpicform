@@ -5,15 +5,14 @@ import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
 import com.gitee.sunchenbin.mybatis.actable.command.BaseModel;
 import com.gitee.sunchenbin.mybatis.actable.constants.MySqlTypeConstant;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 /**
  * @author matrixorz
  * @data 2019-08-14 00:04
  */
 @Data
-@EqualsAndHashCode(callSuper = false)
-@Table(name = "test")  //表名
+//@EqualsAndHashCode(callSuper = false)
+@Table(name = "trial")  //表名
 public class Trial extends BaseModel {
     /**
      * 属性上的注解定义了创建表时的各个字段的属性

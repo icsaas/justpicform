@@ -25,7 +25,7 @@ public class HeroServiceImpl extends ServiceImpl<HeroMapper, Hero> implements IH
 
     @Override
     public Page<Map<Object, Object>> selectHeroPage(Page<Map<Object, Object>> mapPage){
-        List<Map<Object, Object>> list = (List<Map<Object, Object>>) heroMapper.selectMap(mapPage);
+        List<Map<Object, Object>> list = heroMapper.selectMap(mapPage);
         mapPage.setRecords(list);
         return mapPage;
     }

@@ -146,7 +146,7 @@
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
             <version>2.0.0</version>
-            <scope>compile</scope>
+            <scope>compile</scope>1
         </dependency>
 
         <dependency>
@@ -155,7 +155,11 @@
             <version>3.5.1</version>
         </dependency>
 
-
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>easyexcel</artifactId>
+            <version>1.1.2-beat4</version>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>

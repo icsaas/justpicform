@@ -66,7 +66,7 @@ public class MybatisTableConfig {
 //        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSource());
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        sqlSessionFactoryBean.setMapperLocations(resolver.getResources("classpath*:/mapp*/**/*.xml"));
+        sqlSessionFactoryBean.setMapperLocations(resolver.getResources("classpath*:mapp*/**/*.xml"));
         sqlSessionFactoryBean.setTypeAliasesPackage("com.numerx.formboot.testform.entity");
         return sqlSessionFactoryBean;
     }

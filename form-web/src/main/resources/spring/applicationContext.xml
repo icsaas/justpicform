@@ -18,9 +18,9 @@
         http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
     <description>公共配置</description>
     <context:component-scan base-package="com.gitee.sunchenbin.mybatis.actable.manager.*"/>
-    <!--<context:component-scan base-package="com.numerx.formweb.trial.manager.impl"/>-->
+    <context:component-scan base-package="com.numerx.formweb.trial.manager.impl"/>
     <!--&lt;!&ndash; 扫描包加载Service实现类 &ndash;&gt;-->
-    <!--<context:component-scan base-package="com.numerx.formweb.heroform.service"></context:component-scan>-->
+    <context:component-scan base-package="com.numerx.formweb.heroform.service"></context:component-scan>
     <context:component-scan base-package="com.numerx.formweb.*"/>
 
     <context:annotation-config></context:annotation-config>
@@ -46,10 +46,10 @@
         <property name="suffix" value=".jsp"></property>
     </bean>
 
-    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <property name="maxUploadSize" value="10240000"/>
-        <property name="maxInMemorySize" value="10240"/>
-    </bean>
+    <!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
+        <!--<property name="maxUploadSize" value="10240000"/>-->
+        <!--<property name="maxInMemorySize" value="10240"/>-->
+    <!--</bean>-->
 
 
     <!--<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="true">-->

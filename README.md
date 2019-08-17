@@ -1,5 +1,6 @@
 ## 智能表单管理  
-
+[![Build Status](https://travis-ci.org/matrixorz/smartform.svg?branch=master)](https://travis-ci.org/matrixorz/smartform)
+[![codecov](https://codecov.io/gh/matrixorz/smartform/branch/master/graph/badge.svg)](https://codecov.io/gh/matrixorz/smartform)
 ---------------------------------------------------------
   
 [smartform](https://github.com/matrixorz/smartform)(智能表单管理软件)是一个采用JavaWeb（Springboot、SpringMVC、Mybatis-plus等）相关技术进行开发的表单管理软件，系统架构使用前后端分离的微服务架构。

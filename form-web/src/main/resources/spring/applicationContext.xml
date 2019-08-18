@@ -22,6 +22,7 @@
     <!--&lt;!&ndash; 扫描包加载Service实现类 &ndash;&gt;-->
     <context:component-scan base-package="com.numerx.formweb.heroform.service"></context:component-scan>
     <context:component-scan base-package="com.numerx.formweb.*"/>
+    <!--<context:component-scan base-package="com.numerx.formutil.app.dao"/>-->
 
     <context:annotation-config></context:annotation-config>
     <!-- 默认的注解映射的支持 -->
@@ -156,7 +157,7 @@
           class="com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <!--<property name="configLocation" value="classpath:mybatis-config.xml"/>-->
-        <property name="typeAliasesPackage" value="com.numerx.formweb.heroform.entity" />
+        <!--<property name="typeAliasesPackage" value="com.numerx.formweb.heroform.entity" />-->
         <property name="mapperLocations" >
             <array>
                 <value>classpath*:com/gitee/sunchenbin/mybatis/actable/mapping/*/*.xml</value>

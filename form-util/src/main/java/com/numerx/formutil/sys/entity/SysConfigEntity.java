@@ -4,6 +4,7 @@ package com.numerx.formutil.sys.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
 
 import javax.validation.constraints.NotBlank;
 
@@ -11,6 +12,7 @@ import javax.validation.constraints.NotBlank;
  * 系统配置信息
  */
 @TableName("sys_config")
+@Table(name="sys_config")
 public class SysConfigEntity {
 	@TableId
 	private Long id;

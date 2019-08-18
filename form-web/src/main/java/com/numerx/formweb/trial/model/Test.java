@@ -7,7 +7,6 @@ import com.gitee.sunchenbin.mybatis.actable.constants.MySqlTypeConstant;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -21,11 +20,11 @@ import java.util.Date;
 @EqualsAndHashCode(callSuper = false)
 @Table(name="test")
 //@Log4j
-public class Test extends BaseModel  implements Serializable {
-    private static final long serialVersionUID = 5199200306752426433L;
+public class Test extends BaseModel   {
 
-    @Column(name="id",type= MySqlTypeConstant.INT,length = 11,isKey = true,isAutoIncrement = true)
-    private Integer id;
+
+    @Column(name = "id",type = MySqlTypeConstant.INT,length = 11,isKey = true,isAutoIncrement = true)
+    private int id;
 
     @Column(name="name",type=MySqlTypeConstant.VARCHAR,length=111)
     private String name;
@@ -48,12 +47,12 @@ public class Test extends BaseModel  implements Serializable {
     @Column(name="dekes",type= MySqlTypeConstant.DOUBLE,length=5,decimalLength = 3)
     private Double dekes;
 
+    @Column(name="test",type= MySqlTypeConstant.VARCHAR,length=111)
+    private Double test;
 
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
 
-    public Integer getId() {
+
+    public int getId() {
         return id;
     }
 

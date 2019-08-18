@@ -14,6 +14,7 @@ import java.util.Date;
  * @author matrixorz
  * @data 2019-08-12 01:20
  */
+
 @Data
 //@NoArgsConstructor
 //@AllArgsConstructor
@@ -38,7 +39,7 @@ public class Test extends BaseModel  implements Serializable {
     @Column(name="update_time",type=MySqlTypeConstant.DATETIME)
     private Date update_time;
 
-    @Column(name="number",type=MySqlTypeConstant.BIGINT,length=5,isUnique = true)
+    @Column(name="number",type=MySqlTypeConstant.BIGINT,length=5)
     private Long number;
 
     @Column(name="lifecycle",type=MySqlTypeConstant.CHAR,length=1,isNull = false)

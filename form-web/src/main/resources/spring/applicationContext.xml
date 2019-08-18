@@ -26,19 +26,19 @@
     <context:annotation-config></context:annotation-config>
     <!-- 默认的注解映射的支持 -->
     <!--<mvc:annotation-driven>-->
-        <!--<mvc:message-converters>-->
-            <!--<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">-->
-                <!--<property name="objectMapper">-->
-                    <!--<bean class="com.fasterxml.jackson.databind.ObjectMapper">-->
-                        <!--<property name="dateFormat">-->
-                            <!--<bean class="java.text.SimpleDateFormat">-->
-                                <!--<constructor-arg type="java.lang.String" value="yyyy-MM-dd HH:mm:ss"></constructor-arg>-->
-                            <!--</bean>-->
-                        <!--</property>-->
-                    <!--</bean>-->
-                <!--</property>-->
-            <!--</bean>-->
-        <!--</mvc:message-converters>-->
+    <!--<mvc:message-converters>-->
+    <!--<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">-->
+    <!--<property name="objectMapper">-->
+    <!--<bean class="com.fasterxml.jackson.databind.ObjectMapper">-->
+    <!--<property name="dateFormat">-->
+    <!--<bean class="java.text.SimpleDateFormat">-->
+    <!--<constructor-arg type="java.lang.String" value="yyyy-MM-dd HH:mm:ss"></constructor-arg>-->
+    <!--</bean>-->
+    <!--</property>-->
+    <!--</bean>-->
+    <!--</property>-->
+    <!--</bean>-->
+    <!--</mvc:message-converters>-->
     <!--</mvc:annotation-driven>-->
     <!-- 针对freemarker的视图配置 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
@@ -47,19 +47,19 @@
     </bean>
 
     <!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
-        <!--<property name="maxUploadSize" value="10240000"/>-->
-        <!--<property name="maxInMemorySize" value="10240"/>-->
+    <!--<property name="maxUploadSize" value="10240000"/>-->
+    <!--<property name="maxInMemorySize" value="10240"/>-->
     <!--</bean>-->
 
 
     <!--<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="true">-->
-        <!--<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE"/>-->
-        <!--<property name="ignoreResourceNotFound" value="true"/>-->
-        <!--<property name="locations">-->
-            <!--<list>-->
-                <!--<value>classpath:/jdbc.properties</value>-->
-            <!--</list>-->
-        <!--</property>-->
+    <!--<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE"/>-->
+    <!--<property name="ignoreResourceNotFound" value="true"/>-->
+    <!--<property name="locations">-->
+    <!--<list>-->
+    <!--<value>classpath:/jdbc.properties</value>-->
+    <!--</list>-->
+    <!--</property>-->
     <!--</bean>-->
 
     <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
@@ -146,8 +146,8 @@
 
     <!-- 切面 -->
     <!--<aop:config>-->
-        <!--<aop:advisor advice-ref="txAdvice"-->
-                     <!--pointcut="execution(* com.numerx.formweb.heroform.service.impl.*.*(..))" />-->
+    <!--<aop:advisor advice-ref="txAdvice"-->
+    <!--pointcut="execution(* com.numerx.formweb.heroform.service.impl.*.*(..))" />-->
     <!--</aop:config>-->
 
 

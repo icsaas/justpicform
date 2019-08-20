@@ -15,6 +15,7 @@
     <context:component-scan base-package="com.numerx.formweb.*"/>
     <!-- 扫描插件,redis,cache,jsonp,aop token -->
     <context:component-scan base-package="com.numerx.formapi.core"></context:component-scan>
+    <!--<context:component-scan base-package="com.numerx.formutil"/>-->
 
     <!--&lt;!&ndash; 扫描控制器 &ndash;&gt;-->
     <!--<context:component-scan base-package="com.numerx.formweb.*.controller"></context:component-scan>-->

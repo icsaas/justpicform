@@ -6,6 +6,9 @@ package com.numerx.formutil.sys.entity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.gitee.sunchenbin.mybatis.actable.annotation.Column;
+import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
+import com.gitee.sunchenbin.mybatis.actable.constants.MySqlTypeConstant;
 
 import java.io.Serializable;
 import java.util.List;
@@ -14,6 +17,7 @@ import java.util.List;
  * 菜单管理
  */
 @TableName("sys_menu")
+@Table(name="sys_menu")
 public class SysMenuEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -21,47 +25,56 @@ public class SysMenuEntity implements Serializable {
 	 * 菜单ID
 	 */
 	@TableId
+	@Column(name="menuId",type= MySqlTypeConstant.BIGINT,length = 111,isKey = true,isAutoIncrement = true)
 	private Long menuId;
 
 	/**
 	 * 父菜单ID，一级菜单为0
 	 */
+	@Column(name="parentId",type= MySqlTypeConstant.BIGINT,length = 111)
 	private Long parentId;
 	
 	/**
 	 * 父菜单名称
 	 */
 	@TableField(exist=false)
+	@Column(name="parentName",type= MySqlTypeConstant.VARCHAR,length=111)
 	private String parentName;
 
 	/**
 	 * 菜单名称
 	 */
+	@Column(name="name",type= MySqlTypeConstant.VARCHAR,length=111)
 	private String name;
 
 	/**
 	 * 菜单URL
 	 */
+	@Column(name="url",type= MySqlTypeConstant.VARCHAR,length=111)
 	private String url;
 
 	/**
 	 * 授权(多个用逗号分隔，如：user:list,user:create)
 	 */
+	@Column(name="perms",type= MySqlTypeConstant.VARCHAR,length=111)
 	private String perms;
 
 	/**
 	 * 类型     0：目录   1：菜单   2：按钮
 	 */
+	@Column(name="type",type= MySqlTypeConstant.INT,length = 11)
 	private Integer type;
 
 	/**
 	 * 菜单图标
 	 */
+	@Column(name="icon",type= MySqlTypeConstant.VARCHAR,length=111)
 	private String icon;
 
 	/**
 	 * 排序
 	 */
+	@Column(name="orderNum",type= MySqlTypeConstant.INT,length = 11)
 	private Integer orderNum;
 	
 	/**

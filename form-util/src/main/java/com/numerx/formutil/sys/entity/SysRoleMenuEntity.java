@@ -3,6 +3,9 @@ package com.numerx.formutil.sys.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.gitee.sunchenbin.mybatis.actable.annotation.Column;
+import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
+import com.gitee.sunchenbin.mybatis.actable.constants.MySqlTypeConstant;
 
 import java.io.Serializable;
 
@@ -10,20 +13,24 @@ import java.io.Serializable;
  * 角色与菜单对应关系
  */
 @TableName("sys_role_menu")
+@Table(name="sys_role_menu")
 public class SysRoleMenuEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@TableId
+	@Column(name="id",type= MySqlTypeConstant.BIGINT,length = 111,isKey = true,isAutoIncrement = true)
 	private Long id;
 
 	/**
 	 * 角色ID
 	 */
+	@Column(name="roleId",type= MySqlTypeConstant.BIGINT,length = 111)
 	private Long roleId;
 
 	/**
 	 * 菜单ID
 	 */
+	@Column(name="menuId",type= MySqlTypeConstant.BIGINT,length = 111)
 	private Long menuId;
 
 	/**

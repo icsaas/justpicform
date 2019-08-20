@@ -3,6 +3,9 @@ package com.numerx.formutil.sys.entity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.gitee.sunchenbin.mybatis.actable.annotation.Column;
+import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
+import com.gitee.sunchenbin.mybatis.actable.constants.MySqlTypeConstant;
 import com.numerx.formutil.validator.group.AddGroup;
 import com.numerx.formutil.validator.group.UpdateGroup;
 
@@ -16,6 +19,7 @@ import java.util.List;
  * 系统用户
  */
 @TableName("sys_user")
+@Table(name="sys_user")
 public class SysUserEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -23,23 +27,27 @@ public class SysUserEntity implements Serializable {
 	 * 用户ID
 	 */
 	@TableId
+	@Column(name="userId",type= MySqlTypeConstant.BIGINT,length = 111,isKey = true,isAutoIncrement = true)
 	private Long userId;
 
 	/**
 	 * 用户名
 	 */
 	@NotBlank(message="用户名不能为空", groups = {AddGroup.class, UpdateGroup.class})
+	@Column(name="username",type= MySqlTypeConstant.VARCHAR,length=111)
 	private String username;
 
 	/**
 	 * 密码
 	 */
 	@NotBlank(message="密码不能为空", groups = AddGroup.class)
+	@Column(name="password",type= MySqlTypeConstant.VARCHAR,length=111)
 	private String password;
 
 	/**
 	 * 盐
 	 */
+	@Column(name="salt",type= MySqlTypeConstant.VARCHAR,length=111)
 	private String salt;
 
 	/**
@@ -47,16 +55,19 @@ public class SysUserEntity implements Serializable {
 	 */
 	@NotBlank(message="邮箱不能为空", groups = {AddGroup.class, UpdateGroup.class})
 	@Email(message="邮箱格式不正确", groups = {AddGroup.class, UpdateGroup.class})
+	@Column(name="email",type= MySqlTypeConstant.VARCHAR,length=111)
 	private String email;
 
 	/**
 	 * 手机号
 	 */
+	@Column(name="mobile",type= MySqlTypeConstant.VARCHAR,length=111)
 	private String mobile;
 
 	/**
 	 * 状态  0：禁用   1：正常
 	 */
+	@Column(name="status",type= MySqlTypeConstant.INT,length = 11)
 	private Integer status;
 	
 	/**
@@ -68,11 +79,13 @@ public class SysUserEntity implements Serializable {
 	/**
 	 * 创建者ID
 	 */
+	@Column(name="createUserId",type= MySqlTypeConstant.BIGINT,length = 111)
 	private Long createUserId;
 
 	/**
 	 * 创建时间
 	 */
+	@Column(name="createTime",type= MySqlTypeConstant.DATE)
 	private Date createTime;
 
 	/**

@@ -3,6 +3,9 @@ package com.numerx.formutil.sys.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.gitee.sunchenbin.mybatis.actable.annotation.Column;
+import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
+import com.gitee.sunchenbin.mybatis.actable.constants.MySqlTypeConstant;
 
 import java.io.Serializable;
 
@@ -10,19 +13,23 @@ import java.io.Serializable;
  * 用户与角色对应关系
  */
 @TableName("sys_user_role")
+@Table(name="sys_user_role")
 public class SysUserRoleEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@TableId
+	@Column(name="id",type= MySqlTypeConstant.BIGINT,length = 111,isKey = true,isAutoIncrement = true)
 	private Long id;
 
 	/**
 	 * 用户ID
 	 */
+	@Column(name="userId",type= MySqlTypeConstant.BIGINT,length = 111)
 	private Long userId;
 
 	/**
 	 * 角色ID
 	 */
+	@Column(name="roleId",type= MySqlTypeConstant.BIGINT,length = 111)
 	private Long roleId;
 
 	/**

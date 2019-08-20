@@ -19,7 +19,7 @@ public class SysCaptchaEntity  extends BaseModel implements Serializable {
     private static final long serialVersionUID = 5199200306752426432L;
 
     @TableId(type = IdType.INPUT)
-    @Column(name="uuid",type= MySqlTypeConstant.INT,length = 11,isKey = true,isAutoIncrement = true)
+    @Column(name="uuid",type= MySqlTypeConstant.VARCHAR,length = 111,isKey = true)
     private String uuid;
     /**
      * 验证码

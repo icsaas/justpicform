@@ -4,6 +4,9 @@ package com.numerx.formutil.sys.entity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.gitee.sunchenbin.mybatis.actable.annotation.Column;
+import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
+import com.gitee.sunchenbin.mybatis.actable.constants.MySqlTypeConstant;
 
 import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
@@ -14,6 +17,7 @@ import java.util.List;
  * 角色
  */
 @TableName("sys_role")
+@Table(name="sys_role")
 public class SysRoleEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -21,22 +25,26 @@ public class SysRoleEntity implements Serializable {
 	 * 角色ID
 	 */
 	@TableId
+	@Column(name="roleId",type= MySqlTypeConstant.BIGINT,length = 111,isKey = true,isAutoIncrement = true)
 	private Long roleId;
 
 	/**
 	 * 角色名称
 	 */
 	@NotBlank(message="角色名称不能为空")
+	@Column(name="roleName",type= MySqlTypeConstant.VARCHAR,length=111)
 	private String roleName;
 
 	/**
 	 * 备注
 	 */
+	@Column(name="remark",type= MySqlTypeConstant.VARCHAR,length=111)
 	private String remark;
 	
 	/**
 	 * 创建者ID
 	 */
+	@Column(name="createUserId",type= MySqlTypeConstant.BIGINT,length = 111)
 	private Long createUserId;
 
 	@TableField(exist=false)
@@ -45,6 +53,7 @@ public class SysRoleEntity implements Serializable {
 	/**
 	 * 创建时间
 	 */
+	@Column(name="createTime",type= MySqlTypeConstant.DATE)
 	private Date createTime;
 
 	/**

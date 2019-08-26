@@ -8,16 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3c826c85-572a-42dc-814f-2a2591ec4731" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysCaptchaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysCaptchaEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysConfigEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysConfigEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysLogEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysMenuEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysMenuEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysRoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysRoleEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysRoleMenuEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysRoleMenuEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserRoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserRoleEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserTokenEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserTokenEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-web/src/main/resources/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/form-web/src/main/resources/spring/springmvc.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form-web/src/main/resources/spring/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="3363">
               <caret line="177" selection-start-line="177" selection-end-line="177" />
             </state>
           </provider>
@@ -63,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form-web/src/main/resources/spring/springmvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-end-line="18" />
+            <state relative-caret-position="323">
+              <caret line="17" column="53" selection-start-line="17" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -90,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form-web/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="3800">
               <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
             </state>
           </provider>
@@ -99,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysRoleEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-969">
+            <state relative-caret-position="171">
               <caret line="19" column="23" selection-start-line="19" selection-end-line="20" />
             </state>
           </provider>
@@ -108,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysRoleMenuEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-667">
+            <state relative-caret-position="171">
               <caret line="15" column="15" selection-start-line="15" selection-end-line="16" />
             </state>
           </provider>
@@ -117,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+            <state relative-caret-position="722">
+              <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -126,7 +116,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserRoleEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-648">
+            <state relative-caret-position="171">
               <caret line="15" column="7" selection-start-line="15" selection-end-line="16" />
             </state>
           </provider>
@@ -135,7 +125,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserTokenEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="342">
               <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
             </state>
           </provider>
@@ -363,10 +353,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2127" />
+    <option name="width" value="1874" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -376,6 +365,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -386,172 +376,7 @@
             <path>
               <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-boot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-boot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-boot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-boot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-boot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="formboot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-boot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="formboot" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-boot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-boot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="testform" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="formutil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="formutil" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="formutil" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="formutil" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="formutil" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="formutil" type="462c0819:PsiDirectoryNode" />
-              <item name="sys" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="formutil" type="462c0819:PsiDirectoryNode" />
-              <item name="sys" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartform" type="462c0819:PsiDirectoryNode" />
-              <item name="form-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="formutil" type="462c0819:PsiDirectoryNode" />
-              <item name="xss" type="462c0819:PsiDirectoryNode" />
+              <item name="form-front" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smartform" type="b2602c69:ProjectViewProjectNode" />
@@ -623,7 +448,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -647,7 +471,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31893167" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -858,7 +682,8 @@
       <workItem from="1565701988942" duration="35643000" />
       <workItem from="1565793893487" duration="2952000" />
       <workItem from="1565797373098" duration="7456000" />
-      <workItem from="1565870325162" duration="49199000" />
+      <workItem from="1565870325162" duration="49793000" />
+      <workItem from="1566820064655" duration="2300000" />
     </task>
     <servers />
   </component>
@@ -868,7 +693,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136568000" />
+    <option name="totallyTimeSpent" value="139462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -880,10 +705,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="2127" y="0" width="1874" height="1096" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28114665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -911,7 +735,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.26652452" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.27563396" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -1106,20 +930,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3397#3398#0" expanded="true" />
-            <element signature="e#3424#3425#0" expanded="true" />
-            <element signature="e#3499#3500#0" expanded="true" />
-            <element signature="e#3526#3527#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/config/SwaggerConfig.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.7.2.RELEASE/spring-data-redis-1.7.2.RELEASE.jar!/org/springframework/data/redis/connection/RedisConnectionFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1202,13 +1013,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/form_web_war_exploded/WEB-INF/classes/spring/applicationContext.xmlbak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="262" column="8" selection-start-line="262" selection-start-column="8" selection-end-line="262" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/form_web_war_exploded/WEB-INF/classes/spring/applicationContext.xmlbak" />
     <entry file="file://$PROJECT_DIR$/form-web/src/main/resources/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -1406,38 +1211,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysRoleEntity.java">
+    <entry file="file://$PROJECT_DIR$/form-web/src/main/resources/spring/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969">
-          <caret line="19" column="23" selection-start-line="19" selection-end-line="20" />
+        <state relative-caret-position="3363">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysRoleMenuEntity.java">
+    <entry file="file://$PROJECT_DIR$/form-web/src/main/resources/spring/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-667">
-          <caret line="15" column="15" selection-start-line="15" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserRoleEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="15" column="7" selection-start-line="15" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserTokenEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/form-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
+        <state relative-caret-position="323">
+          <caret line="17" column="53" selection-start-line="17" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -1455,24 +1239,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/form-web/src/main/resources/spring/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/form-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="177" selection-start-line="177" selection-end-line="177" />
+        <state relative-caret-position="3800">
+          <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/form-web/src/main/resources/spring/springmvc.xml">
+    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysRoleEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-end-line="18" />
+        <state relative-caret-position="171">
+          <caret line="19" column="23" selection-start-line="19" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysRoleMenuEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="15" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserRoleEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="7" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserTokenEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        <state relative-caret-position="722">
+          <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
         </state>
       </provider>
     </entry>

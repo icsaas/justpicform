@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3c826c85-572a-42dc-814f-2a2591ec4731" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/form-front/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,15 +42,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/form-web/src/main/resources/spring/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3363">
-              <caret line="177" selection-start-line="177" selection-end-line="177" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form-web/src/main/resources/spring/springmvc.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,11 +96,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+            <state relative-caret-position="893">
+              <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/form-front/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="73" column="19" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -207,7 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/utils/PageUtils.java" />
         <option value="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/service/impl/SysUserRoleServiceImpl.java" />
         <option value="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/service/impl/SysCaptchaServiceImpl.java" />
         <option value="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/service/impl/SysLogServiceImpl.java" />
@@ -258,6 +258,7 @@
         <option value="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysMenuEntity.java" />
         <option value="$PROJECT_DIR$/form-web/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserEntity.java" />
+        <option value="$PROJECT_DIR$/form-front/package.json" />
       </list>
     </option>
   </component>
@@ -353,8 +354,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2127" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1874" />
     <option name="height" value="1096" />
   </component>
@@ -364,8 +366,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -448,6 +448,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -465,6 +467,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/form-web/web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -683,7 +686,9 @@
       <workItem from="1565793893487" duration="2952000" />
       <workItem from="1565797373098" duration="7456000" />
       <workItem from="1565870325162" duration="49793000" />
-      <workItem from="1566820064655" duration="2300000" />
+      <workItem from="1566820064655" duration="3555000" />
+      <workItem from="1567003344189" duration="556000" />
+      <workItem from="1567222241101" duration="245000" />
     </task>
     <servers />
   </component>
@@ -693,7 +698,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139462000" />
+    <option name="totallyTimeSpent" value="141518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -705,9 +710,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2127" y="0" width="1874" height="1096" extended-state="0" />
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28114665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28776187" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -725,7 +731,7 @@
       <window_info anchor="bottom" id="Spring" order="8" sideWeight="0.49840087" weight="0.32942432" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4989339" weight="0.32942432" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.073027715" side_tool="true" weight="0.3816631" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.073027715" side_tool="true" visible="true" weight="0.3816631" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49733475" weight="0.3283582" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" sideWeight="0.49946696" weight="0.32942432" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
@@ -863,13 +869,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/xss/XssFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/xss/SQLFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1260,6 +1259,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserRoleEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1274,10 +1280,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/sys/entity/SysUserEntity.java">
+    <entry file="file://$PROJECT_DIR$/form-front/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+        <state relative-caret-position="166">
+          <caret line="73" column="19" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="19" />
         </state>
       </provider>
     </entry>

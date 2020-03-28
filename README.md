@@ -3,7 +3,7 @@
 [![codecov](https://codecov.io/gh/justpic/justpicform/branch/master/graph/badge.svg)](https://codecov.io/gh/justpic/justpicform)
 ---------------------------------------------------------
   
-[justpicform](https://github.com/justpic/justpicform)(智能表单管理软件)是一个采用JavaWeb（Springboot、SpringMVC、Mybatis-plus等）相关技术进行开发的表单管理软件，系统架构使用前后端分离的微服务架构。
+[justpicform](https://github.com/justpic/justpicform)(justpic表单管理软件)是一个采用JavaWeb（Springboot、SpringMVC、Mybatis-plus等）相关技术进行开发的表单管理软件，系统架构使用前后端分离的微服务架构。
 
 ##### 系统架构图
 

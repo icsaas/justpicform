@@ -42,7 +42,7 @@
 [MIT](./LICENSE)
 =======
 ## 智能表单管理  
-[![Build Status](https://travis-ci.org/matrixorz/smartform.svg?branch=master)](https://travis-ci.org/justpic/justpicform)
+[![Build Status](https://travis-ci.org/justpic/justpic.svg?branch=master)](https://travis-ci.org/justpic/justpicform)
 [![codecov](https://codecov.io/gh/justpic/justpicform/branch/master/graph/badge.svg)](https://codecov.io/gh/justpic/justpicform)
 ---------------------------------------------------------
   

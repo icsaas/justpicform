@@ -25,51 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c826c85-572a-42dc-814f-2a2591ec4731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/smartform.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/utils/CheckUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/utils/SHA1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solution.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/form_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/form_web_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/.postcssrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/build/check-versions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/build/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/build/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/build/vue-loader.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/build/webpack.base.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/build/webpack.dev.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/build/webpack.prod.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/config/dev.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/config/prod.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/config/test.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-front/static/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/form-util/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-web/form-web.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/form-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-web/src/main/java/com/numerx/formweb/common/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-web/src/main/java/com/numerx/formweb/common/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-web/src/main/java/com/numerx/formweb/trial/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-web/src/main/java/com/numerx/formweb/trial/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,14 +180,6 @@
       <recent name="com.numerx.formboot" />
       <recent name="com.numerx.formutil" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\tmp2\smartform\form-web\web\WEB-INF" />
-      <recent name="E:\tmp2\smartform\form-web\src\main\resources\spring" />
-      <recent name="E:\tmp2\smartform\form-web\src\main" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.numerx.formutil.annotation" />
       <recent name="com.numerx.formutil.redis" />
@@ -241,6 +190,14 @@
       <recent name="E:\tmp2\smartform\form-util\src\main\java\com\numerx\formutil\sys" />
       <recent name="E:\tmp2\smartform\form-util\src\main\java\com\numerx\formutil\sys\service" />
       <recent name="E:\tmp2\smartform\form-util\src\main\java\com\numerx\formutil\exception" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\tmp2\smartform\form-web\web\WEB-INF" />
+      <recent name="E:\tmp2\smartform\form-web\src\main\resources\spring" />
+      <recent name="E:\tmp2\smartform\form-web\src\main" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.31">
@@ -465,6 +422,11 @@
       <workItem from="1577097374454" duration="435000" />
       <workItem from="1577206766436" duration="202000" />
       <workItem from="1585212136866" duration="1313000" />
+      <workItem from="1585758799596" duration="596000" />
+      <workItem from="1585829043699" duration="2409000" />
+      <workItem from="1585846015354" duration="1639000" />
+      <workItem from="1585969908267" duration="1286000" />
+      <workItem from="1585974445517" duration="929000" />
     </task>
     <servers />
   </component>
@@ -495,6 +457,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="631" y="327" key="git4idea.merge.GitPullDialog" timestamp="1585830859305">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="631" y="327" key="git4idea.merge.GitPullDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1585830859305" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -62,63 +62,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>oxm</find>
-      <find>omx</find>
-      <find>redis</find>
-      <find>red</find>
-      <find>spring-data</find>
-      <find>4.2.6</find>
-      <find>valueOperations</find>
-      <find>org.apache.commons.pool2.impl.GenericObjectPoolConfig</find>
-      <find>swagger</find>
-      <find>enhance</find>
-      <find>sqlSessionFactory</find>
-      <find>baomidou</find>
-      <find>spring-fox</find>
-      <find>springfox-core</find>
-      <find>4.3.7.RELEASE</find>
-      <find>actable</find>
-      <find>druid</find>
-      <find>webpack-bundle</find>
-      <find>com.hhh.</find>
-      <find>REQ_MESSAGE_TYPE_TEXT</find>
-      <find>json-lib</find>
-      <find>Element</find>
-      <find>AesException</find>
-      <find>servlet-api</find>
-      <find>servlet</find>
-      <find>get</find>
-      <find>HttpServletRequest</find>
-      <find>dom4j</find>
-      <find>dom-4j</find>
-      <find>dom</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>test</replace>
-      <replace>testMapper</replace>
-      <replace>Test</replace>
-      <replace>trialMapper</replace>
-      <replace>3.0.7</replace>
-      <replace>3.0.5</replace>
-      <replace>2.3.3</replace>
-      <replace>3.0.3</replace>
-      <replace>2.7.0</replace>
-      <replace>2.0.8</replace>
-      <replace>trial</replace>
-      <replace>3.1.2</replace>
-      <replace>3.1.0</replace>
-      <replace>com.numerx.formutils.sys</replace>
-      <replace>com.numerx.formutil.sys</replace>
-      <replace>com.numerx.formutil.utils</replace>
-      <replace>com.numerx.formutil.sys.</replace>
-      <replace>com.numerx.formutil</replace>
-      <replace>4.3.18.RELEASE</replace>
-      <replace>4.3.7.RELEASE</replace>
-      <replace>com.numerx.formutil.</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -161,7 +104,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../talkyard" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -170,6 +113,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31893167" />
@@ -426,7 +370,12 @@
       <workItem from="1585829043699" duration="2409000" />
       <workItem from="1585846015354" duration="1639000" />
       <workItem from="1585969908267" duration="1286000" />
-      <workItem from="1585974445517" duration="929000" />
+      <workItem from="1585974445517" duration="5436000" />
+      <workItem from="1586158029725" duration="152000" />
+      <workItem from="1586276852152" duration="11000" />
+      <workItem from="1586277147253" duration="595000" />
+      <workItem from="1586452850710" duration="499000" />
+      <workItem from="1586543906968" duration="573000" />
     </task>
     <servers />
   </component>
@@ -460,6 +409,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1586015841614">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="709" y="295" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1586015841614" />
+    <state width="1815" height="312" key="GridCell.Tab.0.bottom" timestamp="1585980326587">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="312" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585980326587" />
+    <state width="1815" height="312" key="GridCell.Tab.0.center" timestamp="1585980326587">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="312" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585980326587" />
+    <state width="1815" height="312" key="GridCell.Tab.0.left" timestamp="1585980326587">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="312" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585980326587" />
+    <state width="1815" height="312" key="GridCell.Tab.0.right" timestamp="1585980326587">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="312" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585980326587" />
+    <state x="631" y="142" width="596" height="795" key="find.popup" timestamp="1586023642285">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="631" y="142" width="596" height="795" key="find.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1586023642285" />
     <state x="631" y="327" key="git4idea.merge.GitPullDialog" timestamp="1585830859305">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

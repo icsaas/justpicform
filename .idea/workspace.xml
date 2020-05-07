@@ -25,8 +25,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c826c85-572a-42dc-814f-2a2591ec4731" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.en.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/icon.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/install.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/started.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-front/form-vue/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/form-front/form-vue/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-front/form-vue/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,12 +94,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZetHTmQNoorZdZmNDRBHw3N4tX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
@@ -104,7 +119,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../talkyard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssm-learn-crm" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -117,7 +132,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31893167" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -375,7 +390,14 @@
       <workItem from="1586276852152" duration="11000" />
       <workItem from="1586277147253" duration="595000" />
       <workItem from="1586452850710" duration="499000" />
-      <workItem from="1586543906968" duration="573000" />
+      <workItem from="1586543906968" duration="1174000" />
+      <workItem from="1586596529470" duration="591000" />
+      <workItem from="1586756379788" duration="683000" />
+      <workItem from="1587453526493" duration="472000" />
+      <workItem from="1587558222792" duration="986000" />
+      <workItem from="1587656527095" duration="1213000" />
+      <workItem from="1587794961436" duration="1229000" />
+      <workItem from="1588834260959" duration="3507000" />
     </task>
     <servers />
   </component>
@@ -408,11 +430,22 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1586015841614">
+    <state x="354" y="612" key="#Tomcat_Server" timestamp="1588834395442">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="709" y="295" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1586015841614" />
+    <state x="354" y="612" key="#Tomcat_Server/0.0.1858.1080@0.0.1858.1080" timestamp="1588834395442" />
+    <state x="34" y="390" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588834398844">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="34" y="390" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1588834398844" />
+    <state x="1248" y="364" key="FileChooserDialogImpl" timestamp="1588834393107">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="1248" y="364" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1588834393107" />
     <state width="1815" height="312" key="GridCell.Tab.0.bottom" timestamp="1585980326587">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -429,6 +462,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1815" height="312" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585980326587" />
+    <state x="860" y="196" key="SettingsEditor" timestamp="1587558792558">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="860" y="196" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1587558792558" />
     <state x="631" y="142" width="596" height="795" key="find.popup" timestamp="1586023642285">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

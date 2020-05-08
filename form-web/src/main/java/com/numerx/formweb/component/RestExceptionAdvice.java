@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 全局异常处理
- * Created by Gaojun.Zhou 2017年6月20日
+ * Created by
  */
 @ControllerAdvice
 @ResponseBody

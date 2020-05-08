@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import java.util.Map;
 /**
  * <p>
- *  服务类
+ *  servcie class
  * </p>
  *
  * @author matrixorz

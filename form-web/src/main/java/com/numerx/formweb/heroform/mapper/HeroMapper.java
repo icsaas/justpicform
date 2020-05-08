@@ -9,7 +9,7 @@ import java.util.Map;
 
 /**
  * <p>
- *  Mapper 接口
+ *  Mapper Interface
  * </p>
  *
  * @author matrixorz

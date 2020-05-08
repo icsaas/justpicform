@@ -3,5 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/form-boot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/form-boot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/form-web/src/main/java/com/numerx/formweb/component/RestExceptionAdvice.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/form-web/src/main/java/com/numerx/formweb/heroform/controller/HeroController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/form-web/src/main/java/com/numerx/formweb/heroform/service/IHeroService.java" charset="GBK" />
   </component>
 </project>

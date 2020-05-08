@@ -19,7 +19,7 @@ import java.util.Map;
 
 /**
  * <p>
- *  前端控制器
+ *  controller class
  * </p>
  *
  * @author matrixorz
@@ -41,7 +41,6 @@ public class HeroController extends  AppController<Hero, IHeroService> {
     /**
      * 记录日志测试
      * @see @Log 记录日志只在方法执行成功返回后执行，通过 com.numerx.formapi.core.log.LogAdvice AOP实现
-     * @see 开发者可实现 LogApi接口的log方法完成记录日志具体的业务,此项目中完善service下的LogServiceImpl.java的log方法即可
      * @return rest
      */
     @GetMapping("/testLog")

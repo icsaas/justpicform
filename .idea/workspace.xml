@@ -5,6 +5,9 @@
       <artifact name="form-web:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -25,14 +28,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c826c85-572a-42dc-814f-2a2591ec4731" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/config/ExampleModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form-boot/src/main/resources/db/migration/V1.0.0__justpicform_base.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javaee.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-boot/src/main/resources/db/migration/V1.0__init_db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-boot/src/main/resources/db/migration/V1.1__create_book.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-boot/src/test/java/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-util/src/main/java/com/numerx/formutil/utils/JwtTokenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-web/src/test/java/BizFlowStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-web/src/test/java/BooleanMainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-web/src/test/java/BoxTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-web/src/test/java/SerializableDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-web/src/test/java/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-web/src/test/java/ThreadLocalDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-web/src/test/java/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tempFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.en.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.en.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/form-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/form-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/FormBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/FormBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/testform/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/testform/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/testform/mapper/TestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/testform/mapper/TestMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/testform/service/ITestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/testform/service/ITestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/testform/service/impl/TestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/testform/service/impl/TestServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/form-boot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/form-boot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-boot/src/main/resources/db/migration/V1.0.0__justpicform_base.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-boot/src/main/resources/mapper/testform/TestMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/form-boot/src/main/resources/mapper/testform/TestMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-util/target/classes/com/numerx/formutil/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/form-util/target/classes/com/numerx/formutil/CodeGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/form-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/form-web/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +89,6 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\maven" />
         <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.3.9" />
       </MavenGeneralSettings>
     </option>
@@ -106,7 +126,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lemon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -119,7 +139,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31893167" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="ImportMappingsDialog.RecentPackages">
@@ -133,32 +153,34 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\tmp2\smartform\form-boot\src\main\resources\db\migration" />
+      <recent name="E:\tmp2\smartform\form-boot\src\main\resources" />
       <recent name="E:\tmp2\smartform\form-util\src\main\java\com\numerx\formutil" />
       <recent name="E:\tmp2\smartform\form-web\src\main\resources\mapper" />
       <recent name="E:\tmp2\smartform\form-util\src\main\java\com\numerx\formutil\sys" />
-      <recent name="E:\tmp2\smartform\form-util\src\main\java\com\numerx\formutil\sys\service" />
-      <recent name="E:\tmp2\smartform\form-util\src\main\java\com\numerx\formutil\exception" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.numerx.formutil.annotation" />
       <recent name="com.numerx.formutil.redis" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\tmp2\smartform\form-boot\src\main\resources\db\migration" />
       <recent name="E:\tmp2\smartform\form-web\web\WEB-INF" />
       <recent name="E:\tmp2\smartform\form-web\src\main\resources\spring" />
       <recent name="E:\tmp2\smartform\form-web\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.FormBootApplication">
-    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.numerx.formutil.CodeGenerator" />
-      <module name="formutil" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.numerx.formutil.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="Application.SerializableDemo">
+    <configuration name="BooleanMainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BooleanMainTest" />
+      <module name="form-web" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoxTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BoxTest" />
+      <module name="form-web" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,41 +198,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SerializableDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SerializableDemo" />
+      <module name="form-web" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Solution" />
+      <module name="form-boot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="console.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/fd0607a8-d54d-46e7-b0ee-8a1da075d355/console.sql" />
       <script-mode>FILE</script-mode>
       <method v="2" />
-    </configuration>
-    <configuration name="FormBootApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="form-boot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.numerx.formboot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.numerx.formboot" />
-      <option name="MAIN_CLASS_NAME" value="com.numerx.formboot.FormBootApplicationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FormBootApplicationTest.test_curd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="form-boot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.numerx.formboot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.numerx.formboot" />
-      <option name="MAIN_CLASS_NAME" value="com.numerx.formboot.FormBootApplicationTest" />
-      <option name="METHOD_NAME" value="test_curd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="FormBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="form-boot" />
@@ -295,22 +300,25 @@
     </configuration>
     <list>
       <item itemvalue="Application.Demo" />
-      <item itemvalue="Application.CodeGenerator" />
-      <item itemvalue="JUnit.FormBootApplicationTest" />
-      <item itemvalue="JUnit.FormBootApplicationTest.test_curd" />
+      <item itemvalue="Application.BooleanMainTest" />
+      <item itemvalue="Application.BoxTest" />
+      <item itemvalue="Application.SerializableDemo" />
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Database Script.console.sql" />
       <item itemvalue="Spring Boot.FormBootApplication" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.31" />
-      <item itemvalue="Database Script.console.sql" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Database Script.console.sql" />
-        <item itemvalue="Application.CodeGenerator" />
-        <item itemvalue="JUnit.FormBootApplicationTest.test_curd" />
-        <item itemvalue="JUnit.FormBootApplicationTest" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.SerializableDemo" />
+        <item itemvalue="Application.BoxTest" />
+        <item itemvalue="Application.BooleanMainTest" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
   </component>
@@ -401,12 +409,23 @@
       <workItem from="1588956906609" duration="7075000" />
       <workItem from="1589043834256" duration="150000" />
       <workItem from="1589044712029" duration="566000" />
-      <workItem from="1589075854727" duration="5013000" />
+      <workItem from="1589075854727" duration="19805000" />
+      <workItem from="1589293430204" duration="1191000" />
+      <workItem from="1589367765618" duration="2217000" />
+      <workItem from="1589441683171" duration="632000" />
+      <workItem from="1589443879141" duration="1602000" />
+      <workItem from="1589895845375" duration="6865000" />
+      <workItem from="1590604740424" duration="875000" />
+      <workItem from="1591190637503" duration="610000" />
+      <workItem from="1591192314964" duration="654000" />
+      <workItem from="1592746120513" duration="1354000" />
+      <workItem from="1592911709312" duration="647000" />
+      <workItem from="1593516401821" duration="1351000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -424,6 +443,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="555" y="218" key="#Inspections" timestamp="1589206471471">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="555" y="218" key="#Inspections/0.0.1858.1080@0.0.1858.1080" timestamp="1589206471471" />
     <state x="409" y="114" key="#Project_Structure" timestamp="1589045027967">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -436,6 +459,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="34" y="390" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1589076435566" />
+    <state x="457" y="448" key="#com.intellij.ide.util.MemberChooser" timestamp="1589906937328">
+      <screen x="0" y="0" width="1842" height="1080" />
+    </state>
+    <state x="457" y="448" key="#com.intellij.ide.util.MemberChooser/0.0.1842.1080@0.0.1842.1080" timestamp="1589906937328" />
     <state x="1228" y="390" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1589041599661">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -456,42 +483,48 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="625" y="187" key="#console.sql/0.0.1858.1080@0.0.1858.1080" timestamp="1589077205141" />
-    <state x="1248" y="364" key="FileChooserDialogImpl" timestamp="1589089742777">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state x="1206" y="364" key="FileChooserDialogImpl" timestamp="1592918164749">
+      <screen x="0" y="0" width="1796" height="1080" />
     </state>
+    <state x="1206" y="364" key="FileChooserDialogImpl/0.0.1796.1080@0.0.1796.1080" timestamp="1592918164749" />
+    <state x="1237" y="364" key="FileChooserDialogImpl/0.0.1842.1080@0.0.1842.1080" timestamp="1589445546722" />
     <state x="1248" y="364" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1589089742777" />
-    <state width="1815" height="305" key="GridCell.Tab.0.bottom" timestamp="1589087329632">
+    <state width="1340" height="275" key="GridCell.Tab.0.bottom" timestamp="1589908270672">
+      <screen x="0" y="0" width="1842" height="1080" />
+    </state>
+    <state width="1340" height="275" key="GridCell.Tab.0.bottom/0.0.1842.1080@0.0.1842.1080" timestamp="1589908270672" />
+    <state width="883" height="306" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1589368842854" />
+    <state width="1340" height="275" key="GridCell.Tab.0.center" timestamp="1589908270672">
+      <screen x="0" y="0" width="1842" height="1080" />
+    </state>
+    <state width="1340" height="275" key="GridCell.Tab.0.center/0.0.1842.1080@0.0.1842.1080" timestamp="1589908270672" />
+    <state width="883" height="306" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1589368842854" />
+    <state width="1340" height="275" key="GridCell.Tab.0.left" timestamp="1589908270671">
+      <screen x="0" y="0" width="1842" height="1080" />
+    </state>
+    <state width="1340" height="275" key="GridCell.Tab.0.left/0.0.1842.1080@0.0.1842.1080" timestamp="1589908270671" />
+    <state width="883" height="306" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1589368842854" />
+    <state width="1340" height="275" key="GridCell.Tab.0.right" timestamp="1589908270672">
+      <screen x="0" y="0" width="1842" height="1080" />
+    </state>
+    <state width="1340" height="275" key="GridCell.Tab.0.right/0.0.1842.1080@0.0.1842.1080" timestamp="1589908270672" />
+    <state width="883" height="306" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1589368842854" />
+    <state width="1815" height="307" key="GridCell.Tab.1.bottom" timestamp="1589205013558">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="305" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1589087329632" />
-    <state width="1815" height="305" key="GridCell.Tab.0.center" timestamp="1589087329632">
+    <state width="1815" height="307" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1589205013558" />
+    <state width="1815" height="307" key="GridCell.Tab.1.center" timestamp="1589205013558">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="305" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1589087329632" />
-    <state width="1815" height="305" key="GridCell.Tab.0.left" timestamp="1589087329632">
+    <state width="1815" height="307" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1589205013558" />
+    <state width="1815" height="307" key="GridCell.Tab.1.left" timestamp="1589205013558">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="305" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1589087329632" />
-    <state width="1815" height="305" key="GridCell.Tab.0.right" timestamp="1589087329632">
+    <state width="1815" height="307" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1589205013558" />
+    <state width="1815" height="307" key="GridCell.Tab.1.right" timestamp="1589205013558">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="305" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1589087329632" />
-    <state width="1815" height="305" key="GridCell.Tab.1.bottom" timestamp="1589087329632">
-      <screen x="0" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1815" height="305" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1589087329632" />
-    <state width="1815" height="305" key="GridCell.Tab.1.center" timestamp="1589087329632">
-      <screen x="0" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1815" height="305" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1589087329632" />
-    <state width="1815" height="305" key="GridCell.Tab.1.left" timestamp="1589087329632">
-      <screen x="0" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1815" height="305" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1589087329632" />
-    <state width="1815" height="305" key="GridCell.Tab.1.right" timestamp="1589087329632">
-      <screen x="0" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1815" height="305" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1589087329632" />
+    <state width="1815" height="307" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1589205013558" />
     <state width="1249" height="287" key="GridCell.Tab.2.bottom" timestamp="1589043796899">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -512,18 +545,42 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="459" y="195" key="Maven.ArtifactSearchDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1589040624466" />
-    <state x="818" y="196" key="SettingsEditor" timestamp="1589076765814">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state x="1007" y="246" key="NewModule_or_Project.wizard" timestamp="1592746817814">
+      <screen x="0" y="0" width="1796" height="1080" />
     </state>
+    <state x="1007" y="246" key="NewModule_or_Project.wizard/0.0.1796.1080@0.0.1796.1080" timestamp="1592746817814" />
+    <state x="1033" y="246" key="NewModule_or_Project.wizard/0.0.1842.1080@0.0.1842.1080" timestamp="1589444796742" />
+    <state x="791" y="196" key="SettingsEditor" timestamp="1593517002326">
+      <screen x="0" y="0" width="1796" height="1080" />
+    </state>
+    <state x="791" y="196" key="SettingsEditor/0.0.1796.1080@0.0.1796.1080" timestamp="1593517002326" />
+    <state x="798" y="196" key="SettingsEditor/0.0.1812.1080@0.0.1812.1080" timestamp="1591196033619" />
     <state x="818" y="196" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1589076765814" />
-    <state x="631" y="142" width="596" height="795" key="find.popup" timestamp="1589076218966">
+    <state x="759" y="427" width="340" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1589114759829">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="631" y="142" width="596" height="795" key="find.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1589076218966" />
+    <state x="759" y="427" width="340" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1858.1080@0.0.1858.1080" timestamp="1589114759829" />
+    <state x="772" y="311" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1589124819076">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="772" y="311" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1589124819076" />
+    <state x="631" y="142" width="596" height="795" key="find.popup" timestamp="1589121837230">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="631" y="142" width="596" height="795" key="find.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1589121837230" />
     <state x="631" y="327" key="git4idea.merge.GitPullDialog" timestamp="1585830859305">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="631" y="327" key="git4idea.merge.GitPullDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1585830859305" />
+    <state x="579" y="570" key="refactoring.ChangeSignatureDialog" timestamp="1589901387291">
+      <screen x="0" y="0" width="1842" height="1080" />
+    </state>
+    <state x="579" y="570" key="refactoring.ChangeSignatureDialog/0.0.1842.1080@0.0.1842.1080" timestamp="1589901387291" />
+    <state x="584" y="570" key="refactoring.ChangeSignatureDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1589204321620" />
+    <state x="1210" y="401" width="672" height="678" key="search.everywhere.popup" timestamp="1589901553663">
+      <screen x="0" y="0" width="1842" height="1080" />
+    </state>
+    <state x="1210" y="401" width="672" height="678" key="search.everywhere.popup/0.0.1842.1080@0.0.1842.1080" timestamp="1589901553663" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -535,7 +592,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/testform/controller/TestController.java</url>
-          <line>38</line>
+          <line>43</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -565,7 +622,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/form-boot/src/main/java/com/numerx/formboot/testform/service/impl/TestServiceImpl.java</url>
-          <line>31</line>
+          <line>33</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

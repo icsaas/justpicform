@@ -1,6 +1,8 @@
 package com.numerx.formboot.testform.service.impl;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.numerx.formboot.testform.entity.Test;
@@ -27,10 +29,17 @@ public class TestServiceImpl extends ServiceImpl<TestMapper, Test> implements IT
     private TestMapper testMapper;
 
     @Override
-    public Page<Map<Object, Object>> selectTestPage(Page<Map<Object, Object>> mapPage){
+    public Page<Map<Object, Object>> selectTestPage(Page<Map<Object, Object>> mapPage, QueryWrapper<Test> queryWrapper){
 
-        List<Map<Object, Object>> list = testMapper.selectMap(mapPage);
+        List<Map<Object, Object>> list = testMapper.selectMap(mapPage,queryWrapper);
         mapPage.setRecords(list);
         return mapPage;
     }
+
+    @Override
+    public IPage<Test> selectTestPage2(Page<Test> page, Integer state){
+        return testMapper.selectPageVo(page,state);
+    }
+
+
 }

@@ -12,6 +12,12 @@
 
     <select id="selectMap" resultType="java.util.Map">
 
+		SELECT  *  from  test  ${ew.customSqlSegment}
+
+	</select>
+
+	<select id="selectPageVo" resultType="com.numerx.formboot.testform.entity.Test">
+
 		SELECT  *  from  test
 
 	</select>

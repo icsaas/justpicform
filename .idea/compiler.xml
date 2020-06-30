@@ -7,12 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="form-web" />
+        <module name="form-engine" />
+        <module name="formengine" />
+        <module name="formutil" />
         <module name="form-util" />
         <module name="form-boot" />
-        <module name="form-engine" />
-        <module name="form-web" />
-        <module name="formutil" />
-        <module name="formengine" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">

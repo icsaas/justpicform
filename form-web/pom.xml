@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <properties>
         <junit.version>4.12</junit.version>
-        <spring.version>4.3.18.RELEASE</spring.version>
+        <spring.version>6.0.0</spring.version>
         <mybatis-plus.version>3.3.1.tmp</mybatis-plus.version>
         <mysql.version>8.0.15</mysql.version>
         <slf4j.version>1.7.21</slf4j.version>
